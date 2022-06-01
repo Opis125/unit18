@@ -18,17 +18,17 @@ body {
 
 .featuredProduct{
   grid-area: auto;
-  background-image: url(beds.png);
+  background-image: url(../images/beds.png);
 }
 
 .secondaryProduct{
   grid-area: auto;
-  background-image: url(bookcases.png);
+  background-image: url(../images/bookcases.png);
 }
 
 .CTA{
   grid-area: auto;
-  background-image: url(desks.png);
+  background-image: url(../images/desks.png);
   justify-content: space-around;
   cursor: pointer;
 }
@@ -129,23 +129,23 @@ h4 {
 }
 
 #Bookcases{
-  background-image: url(bookcases.png);
+  background-image: url(../images/bookcases.png);
 }
 
 #Bedroom{
-  background-image: url(beds.png);
+  background-image: url(../images/beds.png);
 }
 
 #Couches{
-  background-image: url(couch.png);
+  background-image: url(../images/couch.png);
 }
 
 #Patio{
-  background-image: url(patio.png);
+  background-image: url(../images/patio.png);
 }
 
 #Desks{
-  background-image: url(desks.png);
+  background-image: url(../images/desks.png);
 }
 
 .categoryGridArea{
