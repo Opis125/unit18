@@ -11,24 +11,26 @@ body {
   height: 70vh;
   grid-template-rows: 75% 25%;
   grid-template-columns: 75% 25%;
+  grid-template-areas: "featuredProduct secondaryProduct"
+  "featuredProduct CTA";
 }
 
-#heroGrid{grid-template-areas: featuredProduct, secondaryProduct, CTA;}
+#heroGrid{}
 /* Category Grid CSS */
 
-.featuredProduct{
-  grid-area: auto;
-  background-image: url(../images/beds.png);
+#featuredProduct{
+  grid-area: featuredProduct;
+  background-image: url("../images/furniture1.jpg");
 }
 
-.secondaryProduct{
-  grid-area: auto;
-  background-image: url(../images/bookcases.png);
+#secondaryProduct{
+  grid-area: secondaryProduct;
+  background-image: url("../images/furniture2.jpg");
 }
 
-.CTA{
-  grid-area: auto;
-  background-image: url(../images/desks.png);
+#CTA{
+  grid-area: CTA;
+  background-image: url("../images/woodbg.png");
   justify-content: space-around;
   cursor: pointer;
 }
@@ -123,29 +125,34 @@ h4 {
 #categoryGrid{
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: 75% 25%;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas: "bookcases bedroom patio" "couches couches patio" "desks desks desks";
 }
 
-#Bookcases{
-  background-image: url(../images/bookcases.png);
+#bookcases{
+  grid-area: bookcases;
+  background-image: url("../images/bookcases.png");
 }
 
-#Bedroom{
-  background-image: url(../images/beds.png);
+#bedroom{
+  grid-area: bedroom;
+  background-image: url("../images/beds.png");
 }
 
-#Couches{
-  background-image: url(../images/couch.png);
+#couches{
+  grid-area: couches;
+  background-image: url("../images/couch.png");
 }
 
-#Patio{
-  background-image: url(../images/patio.png);
+#patio{
+  grid-area: patio;
+  background-image: url("../images/patio.png");
 }
 
-#Desks{
-  background-image: url(../images/desks.png);
+#desks{
+  grid-area: desks;
+  background-image: url("../images/desks.png");
 }
 
 .categoryGridArea{
@@ -180,14 +187,6 @@ h4 {
   #headline{
     position: static;
     margin: 20px;}
-    #heroGrid{
-      grid-template-areas:"featuredProduct featuredProduct" "secondaryProduct CTA"
-    }
   }
 
 
-#categoryGrid{
-  grid-template-rows: 300px 300px 300px 300px 300px;
-  grid-template-columns: 1fr;
-  grid-template-areas: "bookcases" "bedbroom" "patio" "couches" "desks";
-}
